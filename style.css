@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}
+.header{
+    width: auto;
+    background: url("https://i.imgur.com/vsPJvWJ.png") no-repeat;
+}
+.header h1{
+    color: #fff;
+    font-size: 40px;
+    padding-top: 130px;
+}
+.list{
+    width: 450px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: 20px;
+    opacity: 0.7;
+}
+.setheaderlayout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hotDist{
+    width: 800px;
+    height: 112px;
+    margin-top: 100px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 1px #D9D9D9;
+    border-radius: 5px;
+}
+.hotDist h2{
+    margin-top:20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.hotDist ul{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.hotDist ul li{
+    margin-left: 20px;
+}
+.hDlist a:hover{
+    box-shadow: 0 2px 4px 2px #4F4F4F;
+}
+.hotDist ul li a{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding:10px 20px 10px 20px;
+    border-radius: 5px;
+    
+}
+.purple{
+    background-color: #8a82cc;
+}
+.orange{
+    background-color: #ffa782;
+}
+.yellow{
+    background-color: #f5d005;
+}
+.blue{
+    background-color: #60a1cc;
+}
+.content{
+    margin-top: 50px;
+}
+.content-a {
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    background: linear-gradient(to right, #027ebc 50%, #f7f7f7 50%, transparent 50%);
+    background-size: 26px 3px;
+    background-repeat: repeat-x;
+    background-position:center;
+}
+.content-a img{
+    border: 2px solid #027ebc;
+    padding: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius:50%;
+    background-color: #f7f7f7;
+    margin-top: 5px;
+}
+.midDist{
+    color: gray;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.midDist:hover{
+    color:aqua;
+}
+.content-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.content-list .pic{
+    width: 454px;
+    height: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px;
+    background-size: cover;
+}
+.content-list li:hover{
+    transform:scale(1.1,1.1);
+    transition: 1s;
+}
+.content-list .pic h3{
+    color: #fff;
+    font-size: 24px;
+}
+.content-list .pic p{
+    color: #fff;
+    font-size: 19px;
+}
+.content-list li{
+    margin-bottom: 36px;
+}
+.content-list li:hover{
+    box-shadow: 0 1px 2px 1px #D9D9D9;
+}
+.Listinformation{
+    padding: 10px;
+    background-color: #fff;
+}
+.location{
+    margin-left: 1.3px;
+}
+.timediv,.locationdiv,.phonediv,.showcase,.lastinfor{
+    display: flex;
+}
+.timediv img{
+    width: 18px;
+    height: 18px;
+}
+.locationdiv img{
+    width: 16px;
+    height: 20px;
+}
+.phonediv img{
+    width: 12px;
+    height: 20px;
+}
+.showcase img{
+    width: 20px;
+    height: 20px;
+}
+.lastinfor{
+    justify-content: space-between;
+}
+.showcase a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+    transition: 1s;
+}
+.showcase a:hover{
+    color: red;
+    font-size: 24px;
+}
+.timediv p,.locationdiv p,.phonediv p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}
+.phonediv p{
+    margin-left: 4px;
+}
+.phone{
+    margin-left: 3px;
+}
+
+.footer{
+    width: auto;
+    height: 90px;
+    margin-top: 50px;
+    background-color: #559AC8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.whitefont{
+    color: #fff;
+}
+.goldenfont{
+    color: #FFD366;
+}
